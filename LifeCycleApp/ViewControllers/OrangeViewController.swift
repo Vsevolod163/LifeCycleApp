@@ -25,10 +25,10 @@ final class OrangeViewController: UIViewController {
     }
     
     // Вызывается для создания представления, если оно еще не было создано.
-//    override func loadView() {
-//        // только при программной в верстке, для ручного создания view
-//    }
-    
+    override func loadView() {
+        // только при программной в верстке, для ручного создания view
+    }
+//
 //
 //    // Вызывается после загрузки View в память
 //    override func viewDidLoad() {
