@@ -19,10 +19,10 @@ final class OrangeViewController: UIViewController {
     
     // Вызывается после того, как объекты были десериализированы из файла Interface Builder,
     // и перед началом жизненного цикла UIViewController
-//    override func awakeFromNib() {
-//        super.viewDidLoad()
-//        printMessage()
-//    }
+    override func awakeFromNib() {
+        super.viewDidLoad()
+        printMessage()
+    }
     
     // Вызывается для создания представления, если оно еще не было создано.
 //    override func loadView() {
@@ -37,10 +37,10 @@ final class OrangeViewController: UIViewController {
 //        printMessage()
 //    }
 //
-//}
-//
-//extension UIViewController {
-//    func printMessage(function: String = #function) {
-//        print("\(title ?? ""): \(function)")
-//    }
-//}
+}
+
+extension UIViewController {
+    func printMessage(function: String = #function) {
+        print("\(title ?? ""): \(function)")
+    }
+}
