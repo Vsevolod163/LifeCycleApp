@@ -8,39 +8,36 @@
 import UIKit
 
 final class OrangeViewController: UIViewController {
-
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-    
-    // Вызывается после того, как объекты были десериализированы из файла Interface Builder,
-    // и перед началом жизненного цикла UIViewController
-    override func awakeFromNib() {
-        super.viewDidLoad()
-        printMessage()
-    }
-    
-    // Вызывается для создания представления, если оно еще не было создано.
-//    override func loadView() {
-//        // только при программной в верстке, для ручного создания view
-//    }
-//
-//
-    // Вызывается после загрузки View в память
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "GreenVC"
         printMessage()
     }
-
-}
-
-extension UIViewController {
-    func printMessage(function: String = #function) {
-        print("\(title ?? ""): \(function)")
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        printMessage()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        printMessage()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        printMessage()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        printMessage()
+    }
+    
+    deinit {
+        printMessage()
+    }
+    
+    @IBAction func close() {
+        dismiss(animated: true)
+    }
+    
 }
