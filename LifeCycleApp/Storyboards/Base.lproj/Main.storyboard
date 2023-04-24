@@ -11,7 +11,7 @@
         <!--Yellow VC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LifeCycleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="797" y="3"/>
         </scene>
-        <!--Green View Controller-->
+        <!--SecondVC-->
         <scene sceneID="Pmo-aV-IYT">
             <objects>
-                <viewController id="44Z-Jk-P2s" customClass="GreenViewController" customModule="LifeCycleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SecondVC" id="44Z-Jk-P2s" customClass="GreenViewController" customModule="LifeCycleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IaJ-bt-xCj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1539" y="3"/>
         </scene>
-        <!--Orange View Controller-->
+        <!--Third VC-->
         <scene sceneID="FyS-br-JoL">
             <objects>
-                <viewController id="h0J-SN-Wl8" customClass="OrangeViewController" customModule="LifeCycleApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Third VC" id="h0J-SN-Wl8" customClass="OrangeViewController" customModule="LifeCycleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aok-7g-VrF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,6 +89,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Close View Controller">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="close" destination="h0J-SN-Wl8" eventType="touchUpInside" id="Xuh-lM-Y3G"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eyY-df-qZ0"/>
