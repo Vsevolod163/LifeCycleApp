@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C6A82ACC29F6EDCB003856F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A82ACB29F6EDCB003856F5 /* AppDelegate.swift */; };
 		C6A82ACE29F6EDCB003856F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A82ACD29F6EDCB003856F5 /* SceneDelegate.swift */; };
-		C6A82AD029F6EDCB003856F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A82ACF29F6EDCB003856F5 /* ViewController.swift */; };
+		C6A82AD029F6EDCB003856F5 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A82ACF29F6EDCB003856F5 /* GreenViewController.swift */; };
 		C6A82AD329F6EDCB003856F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A82AD129F6EDCB003856F5 /* Main.storyboard */; };
 		C6A82AD529F6EDCB003856F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A82AD429F6EDCB003856F5 /* Assets.xcassets */; };
 		C6A82AD829F6EDCB003856F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6A82AD629F6EDCB003856F5 /* LaunchScreen.storyboard */; };
+		C6A82AE329F6F0B3003856F5 /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A82AE229F6F0B3003856F5 /* OrangeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C6A82AC829F6EDCB003856F5 /* LifeCycleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A82ACB29F6EDCB003856F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6A82ACD29F6EDCB003856F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C6A82ACF29F6EDCB003856F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6A82ACF29F6EDCB003856F5 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		C6A82AD229F6EDCB003856F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6A82AD429F6EDCB003856F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6A82AD729F6EDCB003856F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6A82AD929F6EDCB003856F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A82AE229F6F0B3003856F5 /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		C6A82ACA29F6EDCB003856F5 /* LifeCycleApp */ = {
 			isa = PBXGroup;
 			children = (
-				C6A82ACB29F6EDCB003856F5 /* AppDelegate.swift */,
-				C6A82ACD29F6EDCB003856F5 /* SceneDelegate.swift */,
-				C6A82ACF29F6EDCB003856F5 /* ViewController.swift */,
-				C6A82AD129F6EDCB003856F5 /* Main.storyboard */,
+				C6A82AE129F6F033003856F5 /* ViewControllers */,
+				C6A82AE029F6F02B003856F5 /* Storyboards */,
+				C6A82ADF29F6F020003856F5 /* App */,
 				C6A82AD429F6EDCB003856F5 /* Assets.xcassets */,
-				C6A82AD629F6EDCB003856F5 /* LaunchScreen.storyboard */,
-				C6A82AD929F6EDCB003856F5 /* Info.plist */,
 			);
 			path = LifeCycleApp;
+			sourceTree = "<group>";
+		};
+		C6A82ADF29F6F020003856F5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C6A82ACB29F6EDCB003856F5 /* AppDelegate.swift */,
+				C6A82ACD29F6EDCB003856F5 /* SceneDelegate.swift */,
+				C6A82AD929F6EDCB003856F5 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C6A82AE029F6F02B003856F5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C6A82AD129F6EDCB003856F5 /* Main.storyboard */,
+				C6A82AD629F6EDCB003856F5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C6A82AE129F6F033003856F5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6A82ACF29F6EDCB003856F5 /* GreenViewController.swift */,
+				C6A82AE229F6F0B3003856F5 /* OrangeViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A82AD029F6EDCB003856F5 /* ViewController.swift in Sources */,
+				C6A82AE329F6F0B3003856F5 /* OrangeViewController.swift in Sources */,
+				C6A82AD029F6EDCB003856F5 /* GreenViewController.swift in Sources */,
 				C6A82ACC29F6EDCB003856F5 /* AppDelegate.swift in Sources */,
 				C6A82ACE29F6EDCB003856F5 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W83LB3ZRMV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LifeCycleApp/Info.plist;
+				INFOPLIST_FILE = LifeCycleApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +348,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W83LB3ZRMV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LifeCycleApp/Info.plist;
+				INFOPLIST_FILE = LifeCycleApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
